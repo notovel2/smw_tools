@@ -19,7 +19,7 @@ export const getMonsters = async (): Promise<Monster[]> => {
 
 export const getMonstersByName = async (name: string): Promise<Monster[]> => {
     const monster: Monster[] = [];
-    const q = query(collection(db, dbName), where('name', '==', name));;
+    const q = query(collection(db, dbName), where('name', '==', name));
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
         monster.push({

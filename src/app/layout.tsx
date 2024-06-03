@@ -27,7 +27,7 @@ export default function RootLayout({
         <title>SMW tools</title>
       </head>
       <body className={inter.className}>
-      <AntdLayout>
+      <AntdLayout style={{ height: '100vh' }}>
         <AntdLayout.Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
             <Row align="bottom">
               <Col span={24}>

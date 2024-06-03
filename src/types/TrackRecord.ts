@@ -7,5 +7,7 @@ export interface TrackRecord extends CreateTrackRecord {
 export interface CreateTrackRecord {
     monster_id: string;
     just_got_at: Date;
+    just_got_by: string;
+    created_by: string;
     remark?: string;
 }
